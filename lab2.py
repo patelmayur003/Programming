@@ -74,3 +74,4 @@ if (correct==6):
     print('You cracked it, good work')
 else:
     print('Check your answers and try again!')
+    print (" hardwork ")
