@@ -28,11 +28,15 @@ print('  ')
 # Explanations one by one and ask a user to enter his guess
 print("Type your Guess")
 print=('  ')
-Question0=  input(f"{explanations[0]}{' '*17}:")
-Question1=  input(f"{explanations[1]}{' '*39}:")
+Question0=  input(f"{explanations[0]}{' '*17}:")+++++
+Question1=  input(f"{explanations[1]}{' '*39}:")+++++
 Question2=  input(f"{explanations[2]}{' '*19}:")
 Question3=  input(f"{explanations[3]}{' '*57}:")
 Question4=  input(f"{explanations[4]}{' '*51}:")
 Question5=  input(f"{explanations[5]}{' '*21}:")
 
 #Print the result so that the correct guesses are printed into the puzzle but the wrong guesses are printed with hidden characters
+x = 0
+y = 48
+if x>y:
+    ("x is greanter than y") 
