@@ -10,33 +10,67 @@ explanations = ('Describes how much space the value needs in the memory',
                   'Built-in function to read users input to the program',
                     'Integer number', 'Decimal point number',
                       'Named place in program memory accessed with a name')
-#print(title) 
-print(25*' ',title)
-#Print  the line aligned to the middle
+#print
+print(30*' ', title, '\n', '_' *90)
+print (explanations [0] + ' '* 4+ '_ '*3+keyword[0].upper())
+print (explanations [1] + ' '* 31+keyword[1].upper()+ ' _ '*3)
+print (explanations [2] + ' '* 11+keyword[2].upper()+ ' _ '*4)          
+print (explanations [3] + ' '* 46+ '_ '*2+keyword[3].upper())
+print (explanations [4] + ' '* 40+ '_ '*2+keyword[4].upper()+ ' _ '*2)
+print (explanations [5] + ' '* 11+ '_ '*2+keyword[5].upper()+ ' _ '*5)
 
-print('_'*78)
-#print explanations aligned to the left 
-#replaces letters in the words and leaves the keyword letter & upper case
-print(explanations[0], ' '*12,'_'*3 + keyword[0].upper())
-print(explanations[1], ' '*37, keyword[1].upper(),'_'*3)
-print(explanations[2],' '*17, keyword[2].upper(),'_'*4)
-print(explanations[3],' '*52, '_'*2 , keyword[3].upper())
-print(explanations[4], ' '*46,'_'*2,keyword[4].upper(),'_'*2)
-print(explanations[5],' '*16,'_'*2, keyword[5].upper(),'_'*5)
-print('  ')
+print( '_' *90)
+correct=0
+a1= input(explanations[0]+':')
+a2= input(explanations[1]+':')
+a3= input(explanations[2]+':')
+a4= input(explanations[3]+':')
+a5= input(explanations[4]+':')
+a6= input(explanations[5]+':')
 
-# Explanations one by one and ask a user to enter his guess
-print("Type your Guess")
-print=('  ')
-Question0=  input(f"{explanations[0]}{' '*17}:")+++++
-Question1=  input(f"{explanations[1]}{' '*39}:")+++++
-Question2=  input(f"{explanations[2]}{' '*19}:")
-Question3=  input(f"{explanations[3]}{' '*57}:")
-Question4=  input(f"{explanations[4]}{' '*51}:")
-Question5=  input(f"{explanations[5]}{' '*21}:")
+print( '_' *90)
+#check 1
+if (a1==words[0]):
+    print(explanations[0] + ' '*4 + 'T Y P E')
+    correct+=1
+else:
+    print (explanations [0] + ' '* 4+ '_ '*3+keyword[0].upper())
 
-#Print the result so that the correct guesses are printed into the puzzle but the wrong guesses are printed with hidden characters
-x = 0
-y = 48
-if x>y:
-    ("x is greanter than y") 
+
+if (a2==words[1]):
+    print (explanations [1] + ' '* 31+'D A T E')
+    correct+=1
+else:
+    print (explanations [1] + ' '* 31+keyword[1].upper()+ ' _ '*3)
+
+
+if (a3==words[2]):
+    print (explanations [2] + ' '* 11+'I N P U T')          
+    correct+=1
+else:
+    print (explanations [2] + ' '* 11+keyword[2].upper()+ ' _ '*4)          
+
+if (a4==words[3]):
+    print (explanations [3] + ' '* 46+ 'I N T')
+    correct+=1
+else:
+    print (explanations [3] + ' '* 46+ '_ '*2+keyword[3].upper())
+
+if (a5==words[4]):
+    print (explanations [4] + ' '* 40+ 'F L O A T')
+    correct+=1
+else:
+    print (explanations [4] + ' '* 40+ '_ '*2+keyword[4].upper()+ ' _ '*2)
+
+if (a6==words[5]):
+    print (explanations [5] + ' '* 11+'V A R I A B L E')
+    correct+=1
+else:
+    print (explanations [5] + ' '* 11+ '_ '*2+keyword[5].upper()+ ' _ '*5)
+
+print( '_' *90)
+
+if (correct==6):
+    print('You cracked it, good work')
+else:
+    print('Check your answers and try again!')
